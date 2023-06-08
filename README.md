@@ -1,10 +1,5 @@
 # README.md
 
-[TOC]
-#Documentation
-##Overview
-##Requirements
-
 
 Documentation
 =============
@@ -15,7 +10,7 @@ Overview
 -------------
 This Python script allows users to input a network address and a set of numbers representing the required number of hosts in each subnet. With this information, the script calculates the necessary subnet masks for each subnet and provides additional information such as the network address, usable IP address range, broadcast address, subnet mask, and number of addressable hosts.
 
-Requisitos
+Requirements
 -------------
 This script requires Python 3 and the 'colored' library for coloring text in the terminal. To install 'colored', you can use pip:
 
@@ -41,8 +36,7 @@ The script contains several functions that perform various tasks:
 | `get_next_network_ip(network_ip, mask)`      |	Gets the next network address.    |
 | `calculate_vlsm(network_ip, endpoint_numbers_per_network, prefix)`      | Performs VLSM calculations and returns the subnets.     |
 | `inject_data_to_dict(network_ip, length_of_subnets, subnets)`      | Injects the calculated data into a dictionary.      |
-| `main()`      |The main function that takes user inputs and calls other functions.
-  |
+| `main()`      |The main function that takes user inputs and calls other functions.|
 
 How to Use
 -------------
@@ -56,6 +50,9 @@ How to Use
 5. The script will return the subnet information for each provided number of hosts.
 
 
+------------
+
+
 Documentación 
 =============
 
@@ -64,11 +61,13 @@ Este script está diseñado para calcular la subnetización utilizando VLSM (Var
 Descripción general
 -------------
 Este script de Python permite a los usuarios introducir una dirección de red y un conjunto de números que representan la cantidad de hosts requeridos en cada subred. Con esta información, el script calcula las máscaras de subred necesarias para cada subred y proporciona información adicional, como la dirección de red, el rango de direcciones IP utilizables, la dirección de difusión, la máscara de subred y el número de hosts direccionables.
+
 Requisitos
 -------------
 Este script requiere Python 3 y la biblioteca 'colored' para colorear el texto en la terminal. Para instalar 'colored', puede utilizar pip:
 
 `pip install colored`
+
 
 Funciones en el script
 -------------
