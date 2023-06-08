@@ -8,7 +8,9 @@ Este script está diseñado para calcular la subnetización utilizando VLSM (Var
 
 Descripción general
 -------------
+
 Este script de Python permite a los usuarios introducir una dirección de red y un conjunto de números que representan la cantidad de hosts requeridos en cada subred. Con esta información, el script calcula las máscaras de subred necesarias para cada subred y proporciona información adicional, como la dirección de red, el rango de direcciones IP utilizables, la dirección de difusión, la máscara de subred y el número de hosts direccionables.
+
 Requisitos
 -------------
 Este script requiere Python 3 y la biblioteca 'colored' para colorear el texto en la terminal. Para instalar 'colored', puede utilizar pip:
