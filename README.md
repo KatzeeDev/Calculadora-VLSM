@@ -38,7 +38,7 @@ The script contains several functions that perform various tasks:
 | `inject_data_to_dict(network_ip, length_of_subnets, subnets)`      | Injects the calculated data into a dictionary.      |
 | `main()`      |The main function that takes user inputs and calls other functions.|
 
-How to Use
+How to Use?
 -------------
 1. Run the Python script in your terminal.
 `py vlsm.py`
@@ -49,6 +49,7 @@ How to Use
 
 5. The script will return the subnet information for each provided number of hosts.
 
+![How to use](howtouse.gif)
 
 ------------
 
@@ -91,7 +92,7 @@ El script contiene varias funciones que realizan una variedad de tareas:
 | `inject_data_to_dict(network_ip, length_of_subnets, subnets)`      | Inyecta los datos calculados en un diccionario.      |
 | `main()`      |La función principal que toma las entradas del usuario y llama a las otras funciones.  |
 
-Cómo usar
+¿Cómo usar?
 -------------
 1. Ejecute el script de Python en su terminal.
 `py vlsm.py`
@@ -99,3 +100,5 @@ Cómo usar
 3. A continuación, introduzca el número de hosts que se requieren en cada subred, separados por comas.
 4. Finalmente, puede introducir un prefijo de máscara de subred opcional.
 5. El script devolverá la información de la subred para cada número de hosts que haya proporcionado.
+
+![Como usar el script](howtouse.gif)
