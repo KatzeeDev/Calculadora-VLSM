@@ -152,9 +152,9 @@ def inject_data_to_dict(network_ip, length_of_subnets, subnets):
 # Main function
 def main():
     # Take user inputs
-    network_ip = input(f'{fg(2)}Ingrese la dirección de red inicial: {attr(0)}')
-    endpoint_numbers_per_network = input(f'{fg(2)}Ingrese el número de hosts por red (separados por comas): {attr(0)}')
-    prefix = input(f'{fg(2)}Ingrese el prefijo de la máscara de subred (deje vacío para el valor predeterminado según la dirección de red): {attr(0)}')
+    network_ip = input(f'{fg(2)}Ingrese la dirección de red inicial: (Enter the initial network address:) {attr(0)}')
+    endpoint_numbers_per_network = input(f'{fg(2)}Ingrese el número de hosts por red: (Enter the number of hosts per network:) {attr(0)}')
+    prefix = input(f'{fg(2)}Ingrese el prefijo de la máscara de subred (deje vacío para el valor predeterminado según la dirección de red): (Enter the subnet mask prefix (leave blank for the default value based on the network address) {attr(0)}')
 
     # Check if user inputs are valid    
     if is_correct_network_address(network_ip) and is_correct_endpoint_numbers_per_network(endpoint_numbers_per_network):
@@ -163,7 +163,7 @@ def main():
         subnets = calculate_vlsm(network_ip, endpoint_numbers_per_network, prefix)
 
         for subnet in subnets:
-            print(f'\n{fg(2)}Información de la subred')
+            print(f'\n{fg(2)}Información de la subred (Subnet Information)')
             print(f'{fg(1)}Dirección de Red (Network Address):', subnet["Network Address"])
             print(f'{fg(5)}Prefijo (Prefix):', subnet["Prefix"])
             print(f'{fg(4)}Rango IP (IP Range):', subnet["IP Range"])
@@ -173,8 +173,6 @@ def main():
             print(attr(0))
     else:
         print("Invalid input.")
-
-
 
 if __name__ == "__main__":
     main()
