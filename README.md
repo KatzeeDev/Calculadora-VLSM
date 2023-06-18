@@ -1,4 +1,12 @@
 # README.md
+Features
+=============
+This Python script offers the following features:
+- Calculates the Variable Length Subnet Mask (VLSM) for a given network address and hosts per network.
+- Utilizes logarithmic formula to determine the number of bits required for the hosts.
+- Displays the calculated VLSM subnet mask.
+
+**Please note that this script is designed to work with standard IPv4 addresses and is not compatible with IPv6 addresses.**
 
 
 Documentation
@@ -52,6 +60,15 @@ How to Use?
 ![How to use](howtouse.gif)
 
 ------------
+
+Caracteristicas
+=============
+
+- Calcula la Máscara de Subred de Longitud Variable (VLSM) para una dirección de red y un conjunto de hosts por red.
+- Utiliza la fórmula logarítmica para determinar el número de bits necesarios para los hosts.
+- Muestra la máscara de subred VLSM calculada.
+
+**Ten en cuenta que este script está diseñado para funcionar con direcciones IPv4 estándar y no es compatible con direcciones IPv6.**
 
 
 Documentación 
